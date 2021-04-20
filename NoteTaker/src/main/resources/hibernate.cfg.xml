@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM   
+ "http://www.hibernate.org/dtd/hibernate-configurration-3.0.dtd">
+ 
+ <hibernate-configuration>
+ 
+ <session-factory>
+ <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+ <property name="connection.url">jdbc:mysql://localhost:3306/hibernotaker</property>
+ <property name="connection.username">root</property>
+ <property name="connection.password">Ak@sh1234</property>
+ <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+ <property name="hbm2ddl.auto">update</property> <!-- this use in creating table in db automatically -->
+ <property name="show_sql">true</property>
+ <property name="format_sql">true</property><!-- Format the generated SQL statement to make it more readable in console, but takes up more screen space -->
+ 
+ <mapping class="com.entities.Note"></mapping>
+
+
+ </session-factory>
+ 
+ </hibernate-configuration> 
+ 
